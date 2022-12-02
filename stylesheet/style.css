@@ -2,3 +2,21 @@ body {
     font-family: 'Space Grotesk', 'calibri', 'arial', sans-serif;
     font-weight: 500;
 }
+
+/* Root */
+
+/* Container */
+
+.conatiner {
+    width: 1725px;
+    margin: 50px 0 auto;
+}
+
+.image__background {
+    width: 30%;
+}
+
+/* Card */
+
+/* Chart */
+
