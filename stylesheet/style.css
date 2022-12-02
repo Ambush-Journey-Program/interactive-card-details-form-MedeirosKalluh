@@ -7,9 +7,9 @@ body {
 
 /* Container */
 
-.conatiner {
-    width: 1725px;
-    margin: 50px 0 auto;
+.container {
+    width: 2048px;
+    margin: 0 auto;
 }
 
 .image__background {
