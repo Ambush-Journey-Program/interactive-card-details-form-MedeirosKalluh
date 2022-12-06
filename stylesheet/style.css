@@ -72,3 +72,82 @@ body {
     flex: 1;
     height: 100vh;
 }
+
+/* Root */
+
+/* Container */
+
+.image__background {
+    position: absolute;
+    width: 30%;
+    margin-bottom: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    margin: 12em 10% auto;
+    align-self: center;  
+    justify-self: center;    
+    justify-content: space-between;
+}
+
+/* Card */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height:  530px;
+}
+.card__front {
+    padding: 28px;
+    display: flex;
+    width: 447px;
+    height: 245px;
+    margin-bottom: 37px;
+    flex-direction: column;
+    background-image: url(../images/bg-card-front.png);
+}
+
+.card__logo {
+    width: 84px;
+    margin-bottom: 67px;
+}
+.card__number {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 3.42222px;
+
+}
+
+.card__holder {
+    display: flex;
+    justify-content: space-between;
+}
+.card__name {
+
+}
+
+.card__date {
+
+}
+.card__back {
+    width: 447px;
+    height: 245px;
+    align-self:flex-end;
+    padding: 100px 41px;
+    background-image: url(../images/bg-card-back.png);
+}
+.card__code {
+    display: flex;
+    width: 361px;
+    height: 38px;
+    padding: 10px;
+    justify-content: end;
+    align-items: flex-end;
+}
+/* Chart */
