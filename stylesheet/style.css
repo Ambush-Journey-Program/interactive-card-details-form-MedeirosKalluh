@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Space Grotesk', 'calibri', 'arial', sans-serif;
     font-weight: 500;
@@ -20,11 +21,31 @@ body {
 
 .card__front {
     background-image: url(../images/bg-card-front.png);
-    background-repeat   : no-repeat;
+    background-repeat: no-repeat;
     width: 447px;
     height: 245px;
     margin-bottom: 37px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+}
 
+.card__logo {
+    width: 84px;
+    margin-bottom: 67px;
+}
+
+.card__number {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 3.42222px;
+}
+
+.card__holder {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card__back {
@@ -33,6 +54,15 @@ body {
     width: 447px;
     height: 245px;
     margin-left: 250px;
+    padding: 100px 41px;
+}
+.card__code {
+    display: flex;
+    width: 361px;
+    height: 38px;
+    padding: 10px;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 /* Chart */
