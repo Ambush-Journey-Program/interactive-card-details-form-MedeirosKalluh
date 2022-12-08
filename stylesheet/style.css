@@ -96,52 +96,55 @@ body {
 
 /* Card */
 
-.card {
+.box-card {
+    display: inline-block;
+    flex: 1;
+    height: 100vh;
+    background-image: url(../images/bg-main-desktop.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    width: 540px;
-    height:  530px;
+    justify-content: center;
+    align-items: center;
 }
+
 .card__front {
-    padding: 28px;
-    display: flex;
+    background-image: url(../images/bg-card-front.png);
+    background-repeat: no-repeat;
     width: 447px;
     height: 245px;
     margin-bottom: 37px;
+    padding: 28px;
+    display: flex;
     flex-direction: column;
-    background-image: url(../images/bg-card-front.png);
 }
 
 .card__logo {
     width: 84px;
     margin-bottom: 67px;
 }
+
 .card__number {
     margin-bottom: 25px;
     font-weight: 500;
     font-size: 28px;
     line-height: 36px;
     letter-spacing: 3.42222px;
-
 }
 
 .card__holder {
     display: flex;
     justify-content: space-between;
 }
-.card__name {
 
-}
-
-.card__date {
-
-}
 .card__back {
+    background-image: url(../images/bg-card-back.png);
+    background-repeat: no-repeat;
     width: 447px;
     height: 245px;
-    align-self:flex-end;
+    margin-left: 250px;
     padding: 100px 41px;
-    background-image: url(../images/bg-card-back.png);
 }
 .card__code {
     display: flex;
@@ -151,4 +154,11 @@ body {
     justify-content: end;
     align-items: flex-end;
 }
+
 /* Chart */
+
+.box-chart {
+    display: inline-block;
+    flex: 1;
+    height: 100vh;
+}
