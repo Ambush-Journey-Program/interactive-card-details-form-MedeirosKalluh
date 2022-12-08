@@ -1,0 +1,24 @@
+body {
+    font-family: 'Space Grotesk', 'calibri', 'arial', sans-serif;
+    font-weight: 500;
+    display: flex;
+}
+
+/* Card */
+.box-card {
+    display: inline-block;
+    flex: 1;
+    height: 100vh;
+    background-image: url(../images/bg-main-desktop.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+/* Chart */
+
+.box-chart {
+    display: inline-block;
+    flex: 1;
+    height: 100vh;
+}
+
