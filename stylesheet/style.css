@@ -12,6 +12,27 @@ body {
     background-image: url(../images/bg-main-desktop.png);
     background-size: 70%;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__front {
+    background-image: url(../images/bg-card-front.png);
+    background-repeat   : no-repeat;
+    width: 447px;
+    height: 245px;
+    margin-bottom: 37px;
+
+}
+
+.card__back {
+    background-image: url(../images/bg-card-back.png);
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    margin-left: 250px;
 }
 
 /* Chart */
@@ -21,4 +42,3 @@ body {
     flex: 1;
     height: 100vh;
 }
-
