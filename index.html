@@ -26,6 +26,25 @@
         </div>   
     </div>
     <div class='box-chart'>
+        <form class="form">
+            <label for='chart-name'>Cardholder Name</label>
+            <input type="text" minlegth="30" maxlegth="30" value="e.g. Jane Appleseed" id="chart-name" name="chart-name" class="form-placeholder"></input>
+
+            <label for='chart-number'>Card Number</label>
+            <input type="text" min="16" max="16" value="e.g. 1234 5678 9123 0000" id="chart-number" name="chart-number" class="form-placeholder"></input>
+            
+            <div class="form-holder holder__subtitle">
+                <label for='chart-date'>Exp.Date (MM/YY)</label>
+                <label for='chart-code'>CVC</label>  
+            </div>
+            <div class="form-holder">                
+                <input type="text" min="2" max="2" value="MM" id="chart-date" name="chart-date" class="form-placeholder placeholder__date"></input>
+                <input type="text" min="2" max="2" value="YY" id="chart-date" name="chart-date" class="form-placeholder placeholder__date"></input>        
+                <input type="text" value="e.g. 123" id="chart-code" name="chart-code" class="form-placeholder"></input>
+            </div>
+
+            <button class="chart__button">Confirm</button>
+        </form>
     </div>
  </body>
  </html>

@@ -146,6 +146,7 @@ body {
     margin-left: 250px;
     padding: 100px 41px;
 }
+
 .card__code {
     display: flex;
     width: 361px;
@@ -161,4 +162,61 @@ body {
     display: inline-block;
     flex: 1;
     height: 100vh;
+    display: flex;
+    padding: 127px;
+}
+
+.form {
+    width: 381px;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form-placeholder {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 26px;
+    padding: 11px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #21092F;
+    border-radius: 8px;
+    opacity: 0.25;   
+}
+
+.form-holder {
+    display: flex;
+}
+
+.holder__subtitle {
+    justify-content: space-between;
+}
+
+.placeholder__date {
+    max-width: 80px;
+    margin-right: 10px;
+}
+
+.chart__button {
+    margin-top: 14px;
+    align-self: center;
+    width: 381px;
+    height: 53px;
+    padding: 15px;
+    font-family: 'Space Grotesk', 'calibri', 'arial', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #21092F;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
