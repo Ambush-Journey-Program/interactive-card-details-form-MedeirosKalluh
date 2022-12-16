@@ -27,22 +27,31 @@
     </div>
     <div class='box-chart'>
         <form class="form">
-            <label for='chart-name'>Cardholder Name</label>
-            <input type="text" minlength="3" maxlength="30" placeholder="e.g. Jane Appleseed" id="chart-name" name="chart-name" class="form-input" required></input>
+            <label class="form__label" for='form__name'>Cardholder Name</label>
+            <input type="text" minlength="3" maxlength="30" placeholder="e.g. Jane Appleseed" id="form__name" name="form__name" class="form-input" required>
+            <p class="form__error">Can’t be blank</p>
 
-            <label for='chart-number'>Card Number</label>
-            <input type="text" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" id="chart-number" name="chart-number" class="form-input" required></input>
-            
-            <div class="form__subtitle">
-                <label for='chart-date' class="subtitle-date">Exp.Date (MM/YY)</label>
-                <label for='chart-code' class="subtitle-code">CVC</label>  
-            </div>
-            <div class="form__base">                
-                <input type="number" minlength="2" maxlength="2" placeholder="MM" id="chart-date" name="chart-date" class="form-input form__date" required></input>
-                <input type="number" minlength="2" maxlength="2" placeholder="YY" id="chart-date" name="chart-date" class="form-input form__date" required></input>        
-                <input type="number" minlength="3" maxlength="3" placeholder="e.g. 123" id="chart-code" name="chart-code" class="form-input form__code" required></input>
-            </div>
+            <label class="form__label" for='form__number'>Card Number</label>
+            <input type="text" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" id="form__number" name="form__number" class="form-input" required>
+            <p class="form__error">Can’t be blank</p>
 
+            <div class="form__base">
+                <div class="form__column">
+                    <label class="form__label" for='form__date' class="subtitle-date">Exp.Date (MM/YY)</label>
+                    <div class="form__row">
+                        <input type="number" minlength="2" maxlength="2" placeholder="MM" id="form__date" name="form__date" class="form-input form__date" required>
+                        <input type="number" minlength="2" maxlength="2" placeholder="YY" id="form__date" name="form__date" class="form-input form__date" required>
+                    </div>
+                    <p class="form__error">Can’t be blank</p>  
+                </div>
+
+                <div class="form__column">
+                    <label class="form__label" for='form__code' class="subtitle-code">CVC</label>
+                    <input type="number" minlength="3" maxlength="3" placeholder="e.g. 123" id="form__code" name="form__code" class="form-input form__code" required>
+                    <p class="form__error">Can’t be blank</p>
+                </div>
+            </div>
+            <!-- class="form__subtitle"> -->    
             <button class="form__button">Confirm</button>
         </form>
     </div>
