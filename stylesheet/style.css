@@ -12,11 +12,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 100vh;
     background-image: url(../images/bg-main-desktop.png);
     background-size: 70%;
-    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    
 }
 
 .card__front {
@@ -25,11 +26,13 @@ body {
     width: 447px;
     height: 245px;
     margin-bottom: 37px;
+    margin-right: 76px;
     padding: 28px;
     border-radius: 10px;
-    background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%); /*Fallback*/
+    background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
     background-image: url(../images/bg-card-front.png);
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat; 
+    color: #FFFFFF;  
 }
 
 .card__logo {
@@ -56,9 +59,10 @@ body {
     margin-left: 250px;
     padding: 100px 41px;
     border-radius: 10px;
-    background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%); /*Fallback*/
+    background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
     background-image: url(../images/bg-card-back.png);
     background-repeat: no-repeat;
+    color: #FFFFFF; 
 }
 
 .card__code {
@@ -70,7 +74,7 @@ body {
     padding: 10px;
 }
 
-/* Chart */
+/* Form */
 
 .box-chart {
     flex: 1;
@@ -87,19 +91,12 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.test {
-    width: 50%;
-    flex-direction: row;
-}
+
 .form__label {
     display: block;
-    /* width: 100%; */
-}
-.form__finder {
-    max-width: 50%;
-    flex-flow: column wrap;
 }
 
+.form__error + .form__row, 
 .form__error + .form__label {
     margin-top: 26px;
 }
@@ -111,12 +108,11 @@ body {
     padding-right: 0;
     line-height: 23px;
     font-size: 18px;
-    color: #21092F;
     border: 2px solid;
     border-radius: 8px;
+    color: #21092F;
     opacity: 0.25;   
 }
-
 
 .form-input:hover {
     border-color: #610595;
@@ -139,15 +135,6 @@ body {
     opacity: 1; 
 }
 
-.form__base {
-    display: flex;
-    flex-wrap: wrap;
-}
- 
-p {
-    margin: 0;
-}
-
 .form__column {
     display: flex;
     flex: 1;
@@ -159,7 +146,7 @@ p {
 
 .form__column:first-of-type {
     padding-left: 0;
-  }
+}
 
 .form__column:last-of-type {
     padding-right: 0;

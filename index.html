@@ -35,12 +35,16 @@
             <input type="text" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" id="form__number" name="form__number" class="form-input" required>
             <p class="form__error">Can’t be blank</p>
 
-            <div class="form__base">
+            <div class="form__row">
                 <div class="form__column">
                     <label class="form__label" for='form__date' class="subtitle-date">Exp.Date (MM/YY)</label>
                     <div class="form__row">
-                        <input type="number" minlength="2" maxlength="2" placeholder="MM" id="form__date" name="form__date" class="form-input form__date" required>
-                        <input type="number" minlength="2" maxlength="2" placeholder="YY" id="form__date" name="form__date" class="form-input form__date" required>
+                        <div class="form__column">
+                            <input type="number" minlength="2" maxlength="2" placeholder="MM" id="form__date" name="form__date" class="form-input form__date" required>
+                        </div>
+                        <div class="form__column">
+                            <input type="number" minlength="2" maxlength="2" placeholder="YY" id="form__date" name="form__date" class="form-input form__date" required>
+                        </div>
                     </div>
                     <p class="form__error">Can’t be blank</p>  
                 </div>
