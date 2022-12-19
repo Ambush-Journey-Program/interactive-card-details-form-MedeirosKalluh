@@ -101,7 +101,7 @@ body {
     margin-top: 26px;
 }
 
-.form-input {
+.form__input {
     width: 100%;
     margin-top: 9px;
     padding: 11px;
@@ -140,8 +140,6 @@ body {
     flex: 1;
     flex-direction: column;
     padding: 0 5px;
-    max-width: 50%;
-
 }
 
 .form__column:first-of-type {
@@ -154,7 +152,6 @@ body {
 
 .form__row {
     display: flex;
-    flex-direction: row;
 }
 
 .form__error {
