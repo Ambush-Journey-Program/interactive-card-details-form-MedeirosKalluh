@@ -52,6 +52,14 @@ body {
     justify-content: space-between;
 }
 
+.card__date {
+    display: flex;
+}
+
+.card__name {
+    text-transform: uppercase;
+}
+
 .card__back { 
     width: 447px;
     height: 245px;
@@ -66,7 +74,7 @@ body {
 
 .card__code {
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
     width: 361px;
     height: 38px;
     padding: 10px;
@@ -120,7 +128,7 @@ body {
 }
 
 .form__input:focus {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .form__input:valid {
