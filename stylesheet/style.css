@@ -117,12 +117,10 @@ body {
     color: #FF5050;
     margin-top: 8px;
 }
-
+.input--touched:invalid + .form__error,
 .form.form--touched .form__input:invalid + .form__error  {
     display: flex;
 }
-
-
 
 .form__error + .form__row, 
 .form__error + .form__label {
@@ -158,6 +156,7 @@ body {
     opacity: 1; 
 }
 
+.form__input.input--touched:invalid,
 .form.form--touched .form__input:invalid {
     border-color: #FF5050;
     opacity: 1; 

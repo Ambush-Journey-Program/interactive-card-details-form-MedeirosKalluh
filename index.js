@@ -23,17 +23,20 @@ formCodeEl.addEventListener("input", function setCardCode(event){
     document.querySelector('#card-code').textContent = event.target.value;
 })
 
-
-// TODO: change to reprenset a button name submitButton
 const submit = document.getElementById("form__button")
-const submitScreen = document.querySelector(".form__submit")
-let form = document.getElementById("form")
-let error = document.querySelector (".form__error")
-
-console.log(form)
-submit.addEventListener("click", function checkValidation (event){
+submit.addEventListener("click", function(event){
    form.classList.add("form--touched")
-
 })
 
+// get the form element
+// add a submit event
+// use the function block to add the success message
 
+const inputEls = document.querySelectorAll('.form__input') 
+inputEls.forEach(function(inputEl) {
+    inputEl.addEventListener("input", function() {
+        inputEl.classList.add("input--touched")
+    })
+})
+
+const submitScreen = document.querySelector(".form__submit")
