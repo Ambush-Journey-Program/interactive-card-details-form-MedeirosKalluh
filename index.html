@@ -10,52 +10,65 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
      <title>Iteractive Credit Card</title>
+     <script src="index.js" defer></script>
  </head>
  <body> 
     <div class='box-card'> 
         <div class='card__front'>
             <img class='card__logo' src="images/card-logo.svg" alt="Credcard Logotype">
-            <span class='card__number card_cell'>0000 0000 0000 0000</span>
+            <span id="card-number" class='card__number'>0000 0000 0000 0000</span>
             <div class="card__holder">
-                <span class='card__name card_cell'>XXXX XXXXX</span>
-                <span class='card__date card_cell'>00/00</span> 
+                <span id="card-name" class='card__name'>XXXX XXXXX</span>
+                <div class='card__date'>
+                    <p id="card-MM">00</p> 
+                    <p>/</p> 
+                    <p id="card-YY">00</p> 
+                </div> 
             </div>
         </div>
         <div class='card__back'>
-            <span class='card__code card_cell'>000</span>
+            <span id="card-code" class='card__code'>000</span>
         </div>   
     </div>
     <div class='box-chart'>
-        <form class="form">
+        <form class="form" id="form">
+        <div class="form__submit" id="form-submit">
+                <img src="images/Oval.svg" alt="submition confirmed logo">
+                <h1>THANK YOU!</h1>
+                <p>We’ve added your card details</p>
+        </div>
+        <div class="form__chart" id="form-chart">
             <label class="form__label" for='form__name'>Cardholder Name</label>
-            <input type="text" minlength="3" maxlength="30" placeholder="e.g. Jane Appleseed" id="form__name" name="form__name" class="form__input" required>
-            <p class="form__error">Can’t be blank</p>
+            <input type="text" minlength="0" maxlength="30" placeholder="e.g. Jane Appleseed" id="form__name" name="form__name" class="form__input" required>
+            <p id="name-error" class="form__error">Can’t be blank</p>
 
             <label class="form__label" for='form__number'>Card Number</label>
             <input type="text" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" id="form__number" name="form__number" class="form__input" required>
-            <p class="form__error">Can’t be blank</p>
+            <p id="number-error" class="form__error">Can’t be blank</p>
 
             <div class="form__row">
                 <div class="form__column">
                     <label class="form__label" for='form__date'>Exp.Date (MM/YY)</label>
                     <div class="form__row">
                         <div class="form__column">
-                            <input type="number" minlength="2" maxlength="2" placeholder="MM" id="form__date" name="form__date" class="form__input" required>
+                            <input type="string" minlength="2" maxlength="2" placeholder="MM" id="form-mm" name="form__date" class="form__input" required>
+                            <p id="mm-error" class="form__error">Can’t be blank</p>
                         </div>
                         <div class="form__column">
-                            <input type="number" minlength="2" maxlength="2" placeholder="YY" id="form__date" name="form__date" class="form__input" required>
+                            <input type="string" minlength="2" maxlength="2" placeholder="YY" id="form-yy" name="form__date" class="form__input" required>
+                            <p id="yy-error" class="form__error">Can’t be blank</p>
                         </div>
-                    </div>
-                    <p class="form__error">Can’t be blank</p>  
+                    </div>    
                 </div>
 
                 <div class="form__column">
                     <label class="form__label" for='form__code'>CVC</label>
-                    <input type="number" minlength="3" maxlength="3" placeholder="e.g. 123" id="form__code" name="form__code" class="form__input" required>
-                    <p class="form__error">Can’t be blank</p>
+                    <input type="string" minlength="3" maxlength="3" placeholder="e.g. 123" id="form__code" name="form__code" class="form__input" required>
+                    <p id="cvc-error" class="form__error">Can’t be blank</p>
                 </div>
             </div> 
-            <button class="form__button">Confirm</button>
+        </div>
+        <button type="submit" class="form__button" id="form__button">Confirm</button>
         </form>
     </div>
  </body>

@@ -52,6 +52,14 @@ body {
     justify-content: space-between;
 }
 
+.card__date {
+    display: flex;
+}
+
+.card__name {
+    text-transform: uppercase;
+}
+
 .card__back { 
     width: 447px;
     height: 245px;
@@ -66,7 +74,7 @@ body {
 
 .card__code {
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
     width: 361px;
     height: 38px;
     padding: 10px;
@@ -82,6 +90,15 @@ body {
     align-items: center;
 }
 
+.form__submit {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Grotesk', 'calibri', 'arial', sans-serif;
+    font-weight: 500;
+    color: #610595;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -92,6 +109,17 @@ body {
 
 .form__label {
     display: block;
+}
+
+.form__error{
+    display: none;
+    font-size: 12px;
+    color: #FF5050;
+    margin-top: 8px;
+}
+.input--touched:invalid + .form__error,
+.form.form--touched .form__input:invalid + .form__error  {
+    display: flex;
 }
 
 .form__error + .form__row, 
@@ -120,7 +148,7 @@ body {
 }
 
 .form__input:focus {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .form__input:valid {
@@ -128,7 +156,8 @@ body {
     opacity: 1; 
 }
 
-.form__input:focus:invalid {
+.form__input.input--touched:invalid,
+.form.form--touched .form__input:invalid {
     border-color: #FF5050;
     opacity: 1; 
 }
@@ -152,11 +181,6 @@ body {
     display: flex;
 }
 
-.form__error {
-    font-size: 12px;
-    color: #FF5050;
-    margin-top: 8px;
-} 
 
 .form__button {
     width: 100%;
