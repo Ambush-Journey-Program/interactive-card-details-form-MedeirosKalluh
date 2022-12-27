@@ -31,14 +31,20 @@
         </div>   
     </div>
     <div class='box-chart'>
-        <form class="form">
+        <form class="form" id="form">
+        <div class="form__submit" id="form-submit">
+                <img src="images/Oval.svg" alt="submition confirmed logo">
+                <h1>THANK YOU!</h1>
+                <p>We’ve added your card details</p>
+        </div>
+        <div class="form__chart" id="form-chart">
             <label class="form__label" for='form__name'>Cardholder Name</label>
             <input type="text" minlength="3" maxlength="30" placeholder="e.g. Jane Appleseed" id="form__name" name="form__name" class="form__input" required>
-            <p class="form__error">Can’t be blank</p>
+            <p id="name-error" class="form__error">Can’t be blank</p>
 
             <label class="form__label" for='form__number'>Card Number</label>
             <input type="text" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" id="form__number" name="form__number" class="form__input" required>
-            <p class="form__error">Can’t be blank</p>
+            <p id="number-error" class="form__error">Can’t be blank</p>
 
             <div class="form__row">
                 <div class="form__column">
@@ -46,21 +52,23 @@
                     <div class="form__row">
                         <div class="form__column">
                             <input type="string" minlength="2" maxlength="2" placeholder="MM" id="form-mm" name="form__date" class="form__input" required>
+                            <p id="mm-error" class="form__error">Can’t be blank</p>
                         </div>
                         <div class="form__column">
                             <input type="string" minlength="2" maxlength="2" placeholder="YY" id="form-yy" name="form__date" class="form__input" required>
+                            <p id="yy-error" class="form__error">Can’t be blank</p>
                         </div>
-                    </div>
-                    <p class="form__error">Can’t be blank</p>  
+                    </div>    
                 </div>
 
                 <div class="form__column">
                     <label class="form__label" for='form__code'>CVC</label>
                     <input type="string" minlength="3" maxlength="3" placeholder="e.g. 123" id="form__code" name="form__code" class="form__input" required>
-                    <p class="form__error">Can’t be blank</p>
+                    <p id="cvc-error" class="form__error">Can’t be blank</p>
                 </div>
             </div> 
-            <button class="form__button">Confirm</button>
+        </div>
+        <button type="button" class="form__button" id="form__button">Confirm</button>
         </form>
     </div>
  </body>

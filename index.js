@@ -24,7 +24,16 @@ formCodeEl.addEventListener("input", function setCardCode(event){
 })
 
 
+// TODO: change to reprenset a button name submitButton
+const submit = document.getElementById("form__button")
+const submitScreen = document.querySelector(".form__submit")
+let form = document.getElementById("form")
+let error = document.querySelector (".form__error")
 
+console.log(form)
+submit.addEventListener("click", function checkValidation (event){
+   form.classList.add("form--touched")
 
+})
 
 
