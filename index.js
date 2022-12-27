@@ -38,5 +38,3 @@ inputEls.forEach(function(inputEl) {
         inputEl.classList.add("input--touched")
     })
 })
-
-const submitScreen = document.querySelector(".form__submit")
