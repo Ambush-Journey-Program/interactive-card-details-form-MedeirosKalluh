@@ -23,18 +23,25 @@ formCodeEl.addEventListener("input", function setCardCode(event){
     document.querySelector('#card-code').textContent = event.target.value;
 })
 
-const submit = document.getElementById("form__button")
-submit.addEventListener("click", function(event){
-   form.classList.add("form--touched")
-})
 
-// get the form element
-// add a submit event
-// use the function block to add the success message
+
 
 const inputEls = document.querySelectorAll('.form__input') 
 inputEls.forEach(function(inputEl) {
     inputEl.addEventListener("input", function() {
         inputEl.classList.add("input--touched")
     })
+})
+
+// get the form element
+// add a submit event
+// use the function block to add the success message
+
+const submitScreen = document.querySelector(".form__submit")
+const formChart = document.getElementById("form-chart")
+const submit = document.getElementById("form__button")
+    submit.addEventListener("click", function(event){
+    form.classList.add("form--touched")
+    submitScreen.style.display = "flex";
+    formChart.style.display = "none";
 })

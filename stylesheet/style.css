@@ -92,11 +92,28 @@ body {
 
 .form__submit {
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Space Grotesk', 'calibri', 'arial', sans-serif;
     font-weight: 500;
     color: #610595;
+}
+
+.form__submit h1 {
+    font-size: 28px;
+    margin-bottom: 29px;
+}
+
+.form__submit p {
+    font-size: 18px;
+    text-align: center; 
+    color: #8F8694;
+    margin-bottom: 48px;
+}
+
+.form__submit-logo {
+    margin-bottom: 62px;
 }
 
 .form {
@@ -117,6 +134,7 @@ body {
     color: #FF5050;
     margin-top: 8px;
 }
+
 .input--touched:invalid + .form__error,
 .form.form--touched .form__input:invalid + .form__error  {
     display: flex;
@@ -143,8 +161,7 @@ body {
 .form__input:hover {
     border-color: #610595;
     cursor: pointer;
-    opacity: 1; 
-
+    opacity: 1;
 }
 
 .form__input:focus {
