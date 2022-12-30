@@ -33,15 +33,20 @@ inputEls.forEach(function(inputEl) {
     })
 })
 
+const formButton = document.getElementById("form__button")
+formButton.addEventListener("click", function(){
+    form.classList.add("form--touched") 
+})
+
 // get the form element
 // add a submit event
 // use the function block to add the success message
-
+const submit = document.querySelector(".form")
 const submitScreen = document.querySelector(".form__submit")
 const formChart = document.getElementById("form-chart")
-const submit = document.getElementById("form__button")
-    submit.addEventListener("click", function(event){
-    form.classList.add("form--touched")
+submit.addEventListener("submit", function(evento){
+    evento.preventDefault(); 
     submitScreen.style.display = "flex";
     formChart.style.display = "none";
 })
+    
