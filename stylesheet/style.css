@@ -90,7 +90,7 @@ body {
     align-items: center;
 }
 
-.form__submit {
+.form__success-message {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -100,19 +100,19 @@ body {
     color: #610595;
 }
 
-.form__submit-title {
+.form__success-message-title {
     font-size: 28px;
     margin-bottom: 29px;
 }
 
-.form__submit-text {
+.form__success-message-text {
     font-size: 18px;
     text-align: center; 
     color: #8F8694;
     margin-bottom: 48px;
 }
 
-.form__submit-logo {
+.form__success-message-logo {
     margin-bottom: 62px;
 }
 

@@ -40,7 +40,7 @@ formButton.addEventListener("click", function(){
 
 
 const submit = document.querySelector("#form")
-const confirmationMessage = document.querySelector("#form__submit")
+const confirmationMessage = document.querySelector("#form__success-message")
 const formChart = document.getElementById("form-chart")
 submit.addEventListener("submit", function(event){
     event.preventDefault(); 
