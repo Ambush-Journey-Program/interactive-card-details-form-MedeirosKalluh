@@ -100,12 +100,12 @@ body {
     color: #610595;
 }
 
-.form__submit h1 {
+.form__submit-title {
     font-size: 28px;
     margin-bottom: 29px;
 }
 
-.form__submit p {
+.form__submit-text {
     font-size: 18px;
     text-align: center; 
     color: #8F8694;
