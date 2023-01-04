@@ -23,14 +23,8 @@ formCodeEl.addEventListener("input", function setCardCode(event){
     document.querySelector('#card-code').textContent = event.target.value;
 })
 
-const submit = document.getElementById("form__button")
-submit.addEventListener("click", function(event){
-   form.classList.add("form--touched")
-})
 
-// get the form element
-// add a submit event
-// use the function block to add the success message
+
 
 const inputEls = document.querySelectorAll('.form__input') 
 inputEls.forEach(function(inputEl) {
@@ -38,3 +32,19 @@ inputEls.forEach(function(inputEl) {
         inputEl.classList.add("input--touched")
     })
 })
+
+const formButton = document.getElementById("form__button")
+formButton.addEventListener("click", function(){
+    form.classList.add("form--touched") 
+})
+
+
+const submit = document.querySelector("#form")
+const confirmationMessage = document.querySelector("#form__success-message")
+const formChart = document.getElementById("form-chart")
+submit.addEventListener("submit", function(event){
+    event.preventDefault(); 
+    confirmationMessage.style.display = "flex";
+    formChart.style.display = "none";
+})
+    
